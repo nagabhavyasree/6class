@@ -8,7 +8,7 @@ import os
 # Google Drive download
 file_id = '1_G4H54--qshMaEVnFAUZK5deQfzX3pEU'  # Replace with your own file ID
 url = f'https://drive.google.com/uc?export=download&id={file_id}'
-output_model_path = 'bert_model.pth'
+output_model_path = '6_bert_model.pth'
 
 if not os.path.exists(output_model_path):
     st.info("📥 Downloading model from Google Drive...")
