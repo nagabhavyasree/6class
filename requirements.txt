@@ -2,3 +2,5 @@ gdown
 transformers
 torch
 streamlit
+numpy
+scikit-learn
