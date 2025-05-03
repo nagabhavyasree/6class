@@ -1,4 +1,4 @@
-%%writefile app.py
+
 import streamlit as st
 from transformers import BertTokenizer, BertForSequenceClassification
 import torch
