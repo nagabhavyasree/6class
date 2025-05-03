@@ -19,7 +19,7 @@ if not os.path.exists(output_model_path):
 label_names = ["true", "mostly-true", "half-true", "barely-true", "false", "pants-fire"]
 
 # Load tokenizer and model
-tokenizer = BertTokenizer.from_pretrained("./bert_tokenizer")  # assumes this is already uploaded/extracted
+tokenizer = BertTokenizer.from_pretrained("./6_bert_tokenizer")  # assumes this is already uploaded/extracted
 model = BertForSequenceClassification.from_pretrained("bert-base-uncased", num_labels=6)
 model.load_state_dict(torch.load(output_model_path, map_location=torch.device("cpu")))
 model.eval()
