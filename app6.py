@@ -4,7 +4,7 @@ from transformers import BertTokenizer, BertForSequenceClassification
 import streamlit as st
 
 # Download the model from Google Drive
-file_id = '1KAFrkjH2gI6c-AyF2-mAZ6yIBb1P0EqN'  # Replace with your actual file ID
+file_id = '1_G4H54--qshMaEVnFAUZK5deQfzX3pEU'  # Replace with your actual file ID
 url = f'https://drive.google.com/uc?export=download&id={file_id}'
 output = 'bert_model.pth'
 
