@@ -5,7 +5,7 @@ import gdown
 import os
 
 # Google Drive download
-file_id = '1jMBGr8lbud-JLkFwQEXabL59dVDDrF7P'  # Replace with your own file ID
+file_id = '1QJMmSmfEqPWTzOytynqdwb1mGnYzIIfQ'  # Replace with your own file ID
 url = f'https://drive.google.com/uc?export=download&id={file_id}'
 output_model_path = '6_bert_model.pth'
 
