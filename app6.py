@@ -17,7 +17,8 @@ if not os.path.exists(output_model_path):
 
 # Load tokenizer and model
 try:
-    tokenizer = BertTokenizer.from_pretrained("./6_bert_tokenizer")
+    # Ensure the tokenizer is loaded from the correct directory
+    tokenizer = BertTokenizer.from_pretrained("./6_bert_tokenizer")  # Make sure you have saved tokenizer in this directory
     
     # Load the pre-trained model architecture
     model = BertForSequenceClassification.from_pretrained("bert-base-uncased", num_labels=6)
