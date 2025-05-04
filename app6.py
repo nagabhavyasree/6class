@@ -49,7 +49,8 @@ label_names = ["true", "mostly-true", "half-true", "barely-true", "false", "pant
 try:
     tokenizer = BertTokenizer.from_pretrained("./6_bert_tokenizer")  # Ensure this folder is uploaded in your app directory
     model = BertForSequenceClassification.from_pretrained("bert-base-uncased", num_labels=6)
-    model.load_state_dict(torch.load(output_model_path, map_location=torch.device("cpu")))
+    model.load_state_dict(torch.load(output_model_path, map_location=torch.device("cpu"), weights_only=False))
+
     model.eval()
 except Exception as e:
     st.error(f"❌ Failed to load model or tokenizer: {e}")
